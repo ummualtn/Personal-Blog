@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title >Personal Blog</title>
+
+    <style>
+
+:root {
+    background-color: rgb(26, 14, 108);
+}
+
+.heeder-large-screen{
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(105, 181, 248);
+    font-size: 18px;
+/*üst barın rengi (ana sayfa,hakkımda....)*/
+}
+
+.anaKisim{
+    height: 650px;
+    background-image: url("image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-color: rgb(14, 129, 230); 
+}
+.anaKisim-description{
+    height: 650px;
+    background-color: rgba(0, 0, 21, .7);
+    display: flex;
+}
+.anaKisim-text{
+    width:70% !important;
+    margin: auto !important;
+    display: flex;
+    flex-wrap: wrap;
+}
+.anaKisim-text p{
+    color:white;
+    width: 50%;
+}
+.anaKisim-title{
+    padding-top:80px; 
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 80px;
+    color:rgb(105, 181, 248);
+    text-align: center;
+}
+
+
+.social{
+    width:100%;
+}
+.icons{
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+main{
+    width:80% !important;
+    margin: auto !important;
+}
+.title{
+    color:white;
+    font-weight: 600;
+    font-size: 40px;;
+    margin:50px 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.about-anaKisim{
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(105, 181, 248);
+    justify-content: space-evenly;
+    align-items: center;
+    padding:20px;
+    margin-top: 20px;
+    border:1px solid black;
+    border-radius: 10px;
+}
+.about-text{
+    width:50%;
+    color:rgb(14, 129, 230);
+    /*kişisel bloğuma hosşgeldiniz yeri*/
+}
+.about-title{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.about-image{
+    width:350px;
+    height: 550px;
+}
+.about-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.about-text p{
+    color: white;
+}
+
+.about-video{
+    width:600px;
+    height: 300px;
+}
+.about-video iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contact-list{
+    margin-top: 15px !important;
+    color: white;
+}
+h5{
+    color:white;
+}
+span{
+    padding-right: 10px;
+}
+.email-contact{
+    width:80%;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1500px) {
+    .anaKisim{
+        height: 550px;
+    }
+    .anaKisim-description{
+        height: 550px
+    }
+    .anaKisim-title{
+        font-size:50px;
+    }
+}
+
+.footer {
+            background-color: rgb(105, 181, 248); /* Footer arka plan rengi */
+            color: white; /* Yazı rengi */
+            text-align: center; /* Yazıyı ortalar */
+            padding: 10px 0; /* Üst ve alt boşluk */
+            position: relative; /* Footer'ın konumunu ayarlar */
+            bottom: 0; /* Sayfanın en altında yer almasını sağlar */
+            width: 100%; /* Tam genişlik */
+            border-radius: 10px;
+        }
+
+html {
+    scroll-behavior: smooth;
+}
+    </style>
+</head>
+
+
+<body>
+    <header style="position: relative;">
+        <div class="w3-top" class="header" id="home">
+          <div class="w3-bar  w3-card w3-left-align w3-large heeder-large-screen" style="background-color: #000015;" >
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-black w3-large " href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="https://www.instagram.com/ummu.altnn/" target="_blank" class="w3-bar-item w3-button w3-padding-large  w3-hover-black">
+                <i class="fa-solid fa-laptop-code"></i>Hakime Ümmü ALTIN</a>
+            <div >
+              <a href="#anasayfa" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" >Ana Sayfa</a>
+              <a href="#hakkimda" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">Hakkımda</a>
+              <a href="#iletisim" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black">İletişim</a>
+            </div>
+          </div>
+        </div>
+      </header>
+          <section >
+             <div class="anaKisim" id="anasayfa">
+               <div class="anaKisim-description">
+                 <div class="anaKisim-text">
+                  <h1 class="anaKisim-title">4/3 Yıllık Serüvenim</h1>
+                  <p>
+                    Bilgisayar Mühendisi olmak için sıfır tecrübeyle çıktığım bu serüvenimde her ne kadar çok zorlansam da bir şeyleri yapabilmenin verdiği his hoşuma gidiyor.
+                    Bazen hiç başaramayacakmışım gibi hissetsem de biliyorum ki ben istedikten ve çabaladıktan sonra başarabilirim.
+                  </p>
+                  <span class="w3-text-white social" style="margin-top:050px">
+                    <p >Sosyal Medya Hesaplarım</p>
+                    <div class="w3-margin-top">
+                 <a href="https://www.instagram.com/ummu.altnn/" target="_blank"><i class="fa fa-instagram w3-hover-opacity icons" ></i></a> 
+                 <a href="https://www.linkedin.com/in/ümmü-altin-81191a2a4/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity icons"></i></a>  
+                 </div>
+                  </span>
+                 </div>
+               </div>
+             </div>
+          </section>
+
+          <div class="about" id="hakkimda" >
+    
+            <div class="about-anaKisim" style="position: relative; ">
+              
+    
+              <div class="about-text">
+                <h2  class="badge" style=" background-color:  rgb(14, 129, 230); color: rgb(255, 255, 255); padding: 10px; border-radius: 10px;">Ben H.Ümmü ALTIN</h2>
+                 <h1 class="about-text">Kişşisel Bloğuma Hoşgeldiniz</h1>
+                  <p>Tercih sonuçlarım doğrultusunda Erzurum Teknik Üniversitesinde 1 sene eğitim öğretimime devam ettim. Daha sonra yatay geçiş yaparak 2.sınıfta Süleyman Demirel Üniversitesine başladım. Şuanda da SDÜ'de Bilgisayar Mühendisliği 3.sınıf öğrencisi olarak eğitimime devam etmekteyim. </p>
+                  <p>Bu zamana kadar C, C# ve Java dillerini gördüm. Ayrıca SQL alanında da biraz bilgi sahibiyim. Kendime koyduğum diğer hedeflerden birisi de swift öğrenmek. Ayrıca bu ödevi yaparken de frontend ksımının hoşuma gittiğini farkettim ve bu yüzden hedeflerime frontend alanı da eklendi.</p>
+                  <p>3.sınıf olmama rağmen tam anlamıyla ne yapmak istediğime henüz karar veremediğimden çelişkiler yaşayabiliyorum. Fakat bunlara rağmen gelecek hayallerim arasında home-office çalışmak gibi bir isteğim var. Bu hedefim doğrultusunda da ilerleyeceğime inanıyorum.</p>
+                  <p>Bunların dışında özel olarak kendimden bahsedecek olursam öncelikle fotoğraf çekmeye ve fotoğraf çekinmeye bayılırım. Dünyayı gezip çektiğim fotoğraflarla albüm oluşturmakta hayallerimden sadece birisi. Ayrıca hayatımın her anında müzik dinleyebilirim ve hobi olarakta buz pateni yapmayı seviyorum.</p>
+              </div>
+              <div class="about-image">
+                <img src="IMG_5108.jpg" alt="erik-mclean"/>
+              </div>
+
+              <div class="about-video">
+                <iframe src="https://www.youtube.com/embed/dqpr4o8Z4bM?si=A1TIt_-rhcUXpzeK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              
+            </div>
+    
+          </div>
+          <div>
+    
+          <h2 class="title">Bana ulaşmak için</h2>
+          <div class="contact" id="iletisim" style="padding-bottom: 10px !important;">
+          <div class="contact-list contact-address"  >
+            <h5><span><i class="fa fa-map-marker w3-xlarge w3-text-light-grey"></i></span>Adres</h5>
+            <p>Korkuteli/Antalya </p>
+            <p>Merkez/Isparta </p>
+          </div>
+
+          <div class="contact-list">
+            <h5><span><i class="fa fa-envelope w3-xlarge w3-text-light-grey"></i></span>E-mail</h5>
+            <div class="email-contact">
+                <a href="mailto:ummualtnn@gmail.com?subject=Bilgi%20Talebi" target="_blank">ummualtnn@gmail.com</a>
+            </div>
+        </div>
+        
+          <div class="contact-list" >
+            <h5><span><i class="fa fa-phone w3-xlarge w3-text-light-grey"></i></span>Telefon</h5>
+            <p>05344170523</p>
+          </div>
+    
+          </div>
+        </div>
+        <footer class="footer">
+            <p>&copy; 2024 Hakime Ümmü ALTIN - 2221032716</p>
+        </footer>
+</body>
+</html>
